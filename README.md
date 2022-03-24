@@ -1,4 +1,4 @@
-# Learn-Ruby-on-Rails
+# Learn-Ruby-on-Rails１
 自宅にて、RubyonRailsを学習したときに制作した簡易なブログサイトのコード
 
 test1・・・Paizaラーニングの講義動画で学んだことの復習と応用の実践。
