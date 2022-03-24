@@ -1,0 +1,7 @@
+<h1>うちのねこ日記</h1>
+<p>今日もおつかれさま！</p>
+<p>さっそくねこ日記を書こう！</p>
+
+<%= image_tag 'neko4.jpg', onmouseover: "this.src=`#{asset_path('neko5.jpg')}`", onmouseout: "this.src=`#{asset_path('neko4.jpg')}`", width: '40%'  %>
+
+<p><%= Date.today %></p>

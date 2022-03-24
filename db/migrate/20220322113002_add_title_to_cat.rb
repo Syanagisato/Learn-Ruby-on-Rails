@@ -1,0 +1,5 @@
+class AddTitleToCat < ActiveRecord::Migration[7.0]
+  def change
+    add_column :cats, :title, :string
+  end
+end

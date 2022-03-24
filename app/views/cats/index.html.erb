@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>うちのねこ日記:記事一覧</h1>
+
+<table id="cats">
+  <tr>
+    <th>タイトル</th>
+    <th>記事リンク</th>
+  </tr>
+  <% @cats.each do |cat| %>
+    <tr>
+    <td class="cats_td"><%= cat.title %></td>
+    <td class="cats_td"><%= link_to "記事を見る", cat %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "新規作成", new_cat_path %>
+<%= link_to "トップページ", toppage_index_path %>

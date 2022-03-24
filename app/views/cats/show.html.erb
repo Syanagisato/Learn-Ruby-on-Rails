@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= @cat.title %></h1>
+<span id="name">制作者: <%= @cat.cat_name %></span>
+<span>制作日: <%= @cat.time %></span>
+
+<div id="article"><%= @cat.article %></div>
+
+<div>
+  <%= link_to "記事を編集", edit_cat_path(@cat) %> |
+  <%= link_to "一覧に戻る", cats_path %>
+
+  <%= button_to "記事を削除", @cat, method: :delete %>
+</div>

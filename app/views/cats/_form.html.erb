@@ -1,0 +1,37 @@
+<%= form_with(model: cat) do |form| %>
+  <% if cat.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cat.errors.count, "error") %> prohibited this cat from being saved:</h2>
+
+      <ul>
+        <% cat.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :cat_name, style: "display: block" %>
+    <%= form.text_field :cat_name %>
+  </div>
+
+  <div>
+    <%= form.label :article, style: "display: block" %>
+    <%= form.text_area :article, size: "50x30" %>
+  </div>
+
+  <div>
+    <%= form.label :time, style: "display: block" %>
+    <%= form.datetime_field :time %>
+  </div>
+
+  <div>
+    <%= form.submit 'セーブ' %>
+  </div>
+<% end %>
